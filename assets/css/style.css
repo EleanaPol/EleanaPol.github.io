@@ -10,7 +10,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Inconsolata", monospace;
-  color: #0d1e2d;
+  color: #FFE3E0;
+  background-color: #0A0A0A;
 }
 
 a {
@@ -19,11 +20,17 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #FFE3E0;
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: "Raleway", sans-serif;
+}
+
+.img-logo
+{
+  width: 100px;
+  height: 100px;
 }
 
 .section {
@@ -32,7 +39,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .filters a {
   text-decoration: none;
-  color: #000;
+  /*color: #000;*/
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -51,7 +58,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background-color: #000;
 }
 .filters a.active {
-  color: #000;
+  color: #FFE3E0;
 }
 .filters a.active:before {
   content: "";
@@ -151,6 +158,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .h4 {
   font-size: 16px;
+}
+.h5
+{
+  font-size: 16px;
+  color: #777;
 }
 
 .heading {
@@ -303,7 +315,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #0d1e2d;
+  /*background: #272932;*/
+  background: #EDCFCC;
 }
 .custom-navmenu .custom-menu, .custom-navmenu .custom-menu li {
   padding: 0;
@@ -327,6 +340,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .custom-navmenu h3 {
   font-size: 20px;
   color: #fff;
+
 }
 .custom-navmenu p {
   color: rgba(255, 255, 255, 0.6);
@@ -342,15 +356,19 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .custom-navbar {
   padding-top: 50px;
   width: 100%;
+
 }
 @media (max-width: 780px) {
   .custom-navbar > .container {
     padding-right: 0;
     padding-left: 0;
+
   }
 }
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
+
+  /*color: #fff*/
 }
 
 /* Burger */
@@ -359,6 +377,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   height: 32px;
   cursor: pointer;
   position: relative;
+  
 }
 
 .burger:before, .burger span, .burger:after {
@@ -367,6 +386,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   display: block;
   background: #000;
   border-radius: 2px;
+  background-color:#EDCFCC;
   position: absolute;
   opacity: 1;
 }
@@ -400,6 +420,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Click */
 .burger.active span {
+
   opacity: 0;
 }
 
