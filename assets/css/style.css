@@ -32,6 +32,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   width: 100px;
   height: 100px;
 }
+.img-about
+{
+  width: 300px;
+  height: 300px;
+}
 
 .section {
   padding: 7rem 0;
@@ -317,19 +322,25 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .custom-navmenu {
   /*background: #272932;*/
   background: #EDCFCC;
+  
 }
 .custom-navmenu .custom-menu, .custom-navmenu .custom-menu li {
   padding: 0;
   margin: 0;
   list-style: none;
+  display:inline-block;
+  word-spacing: 20px;
 }
 .custom-navmenu .custom-menu li {
   margin-bottom: 0;
   font-size: 20px;
+  
 }
 .custom-navmenu .custom-menu li a {
-  color: #fff;
+  /*color: #fff;*/
+  color: #0A0A0A;
   padding: 10px 0 !important;
+  
 }
 .custom-navmenu .custom-menu li a:hover {
   text-decoration: none;
@@ -351,18 +362,20 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .custom-navmenu a:hover {
   color: #fff;
 }
+.col-md-2{
+  width: 100%;
+}
 
 /* Custom Navbar */
 .custom-navbar {
   padding-top: 50px;
   width: 100%;
-
+  
 }
 @media (max-width: 780px) {
   .custom-navbar > .container {
     padding-right: 0;
     padding-left: 0;
-
   }
 }
 .custom-navbar .navbar-brand {
@@ -459,6 +472,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
   text-align: center;
   color: #0d1e2d;
+}
+.text-md-end{
+  text-align: left !important;
 }
 .social a span {
   display: inline-block;
