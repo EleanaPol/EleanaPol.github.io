@@ -84,29 +84,28 @@
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-8" data-aos="fade-up">
-              <iframe src="https://player.vimeo.com/video/655891839?h=102f30a93c" 
-              width="855" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-              </iframe>
               <br>
-              <br>
-              <iframe width="855" height="480" src="https://www.youtube.com/embed/kf3Gxf0FNv4" title="YouTube video player" 
+              <iframe width="855" height="480" src="https://www.youtube.com/embed/MAb5mhGX6iE?si=ozGpxNZhkzS2UCIp" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
               <br>
+              <!--<br>
+              <img src="assets/img/Projects/Webp/moment.webp" alt="Image" class="img-fluid">
+              <br>-->
               <br>
-              <img src="assets/img/Projects/crowd/intro.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/Projects/Convert/Triangles_Square.png" alt="Image" class="img-fluid">
               <br>
               <br>
-              <img src="assets/img/Projects/crowd/data.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/Projects/Convert/Infinity_Square.png" alt="Image" class="img-fluid">
               <br>
               <br>
-              <img src="assets/img/Projects/crowd/behind.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/Projects/Convert/U_Square.png" alt="Image" class="img-fluid">
               <br>
               <br>­
-              <img src="assets/img/Projects/crowd/outputs.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/Projects/Convert/Spiral_Square.png" alt="Image" class="img-fluid">
               <br>
               <br>­
-              <img src="assets/img/Projects/crowd/day.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/Projects/Convert/Key_Square.png" alt="Image" class="img-fluid">
             </div>
             <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <div class="sticky-content">
@@ -114,27 +113,27 @@
                 <p class="mb-4"><span class="text-muted">Design</span></p>
 
                 <div class="mb-5">
-                  <p>The app was developed as a quick and easy tool for pedestrian flow simulation that can be used in the early stages of architectural design.
-                    An agent-based approach has been implemented,
-                    where autonomous behaviours are replaced by an
-                    environment-based logic relying on agent grouping
-                    and the generation of the corresponding
-                    dynamic flow fields.  </p>
+                  <p>As part of the project Homecoming VR, there was a need to come up with a way the players would be able to navigate the narrative and "unlock" specific
+                     memories (360 videos) by performing certain shapes with their hands using the VR controllers.   </p>
                   <p>
-                    The main pathfinding algorithm relies on Fast Marching which is used to compute a monotone front propagation of anisotropic nature, by solving the 
-                    eikonal equation. Due to the inherently sequential nature of this algorithm and the consequences this can have on real-time performance, Unity's DOTs 
-                    have been extensively implemented to parallelize as many processes as possible. 
+                    A custom Image Classification model was trained using 100000 synthetic images of hand drawn shapes. The dataset was generated from an an automated system 
+                    that was designed in a way that would allow enough variation to train a confident image classifier. As a first step, the main shapes were converted to splines 
+                    that were further processed by a set of calibrated curve distortions and simplifications to resemble shapes that could have been written by hand.
                   </p>
                   <p>
-                    The app collects and visualizes real-time data that can be both relevant to the crowd behaviour as well as selected architectural features. 
+                    The distortion effects were applied in different orders and strengths to create a wide range of hand-written shapes. The final model was used for inference 
+                    directly within the VR app with Barracuda. 
                   </p>
                 
 
                 </div>
 
                 <h3 class="h3 mb-3">Project Info</h3>   
-                <p class="mb-4"><span class="text-muted">Role</span></p>            
-                 <p>Lead developer of Grimshaw's Design & Technology department.</p>
+                <p class="mb-4"><span class="text-muted">Role</span></p>  
+                <p>- Automated image generator system development<br> 
+                  - Machine Learning Model training<br> 
+                  - Machine Learning Model Unity implementation<br> 
+                </p>         
                 <!--
                 <h4 class="h4 mb-3">Individual Contribution</h4>
                 <ul class="list-unstyled list-line mb-5">
